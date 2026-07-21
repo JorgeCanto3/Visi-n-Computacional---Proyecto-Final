@@ -1,4 +1,4 @@
-   function Q = trasladar(app, P1, deltaX, deltaY)
+   function Q = trasladar( P1, deltaX, deltaY)
             [filas, columnas, canales] = size(P1);
             Q = zeros(filas, columnas, canales, class(P1));
             for k = 1:canales

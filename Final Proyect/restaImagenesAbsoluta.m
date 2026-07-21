@@ -1,4 +1,4 @@
-    function Q = restaImagenesAbsoluta(app, P1, P2, filas, columnas, canales)
+    function Q = restaImagenesAbsoluta( P1, P2, filas, columnas, canales)
             Q = zeros(filas, columnas, canales, 'uint8');
             P1 = double(P1); P2 = double(P2);
             for k = 1:canales

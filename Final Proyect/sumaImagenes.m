@@ -1,4 +1,4 @@
-        function Q = sumaImagenes(app, P1, P2, filas, columnas, canales)
+        function Q = sumaImagenes( P1, P2, filas, columnas, canales)
             Q = zeros(filas, columnas, canales, 'uint8');
             P1 = double(P1); P2 = double(P2);
             for k = 1:canales

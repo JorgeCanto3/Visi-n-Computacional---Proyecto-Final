@@ -1,4 +1,4 @@
-   function Q = rotar(app, P1, grados)
+   function Q = rotar( P1, grados)
             [filas, columnas, canales] = size(P1);
             Q = zeros(filas, columnas, canales, class(P1));
             rads = grados * pi / 180;

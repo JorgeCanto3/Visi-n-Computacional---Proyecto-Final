@@ -1,4 +1,4 @@
-      function Q = restaEscalar(app, P1, C, filas, columnas, canales)
+      function Q = restaEscalar( P1, C, filas, columnas, canales)
             Q = zeros(filas, columnas, canales, 'uint8');
             P1 = double(P1);
             for k = 1:canales

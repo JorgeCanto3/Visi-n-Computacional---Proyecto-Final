@@ -1,4 +1,4 @@
-function [R, G, B] = ExtraerColores(app, img, y, x)
+function [R, G, B] = ExtraerColores(img, y, x)
             R = zeros(y, x, 3, 'uint8'); 
             G = zeros(y, x, 3, 'uint8');
             B = zeros(y, x, 3, 'uint8');
