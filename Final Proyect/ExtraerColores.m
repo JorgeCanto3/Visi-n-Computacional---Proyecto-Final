@@ -1,18 +1,25 @@
-function [R, G, B] = ExtraerColores(img, y, x)
-            R = zeros(y, x, 3, 'uint8'); 
-            G = zeros(y, x, 3, 'uint8');
-            B = zeros(y, x, 3, 'uint8');
-            for i = 1:y
-                for j = 1:x
-                    R(i, j, 1) = img(i, j, 1);
-                    R(i, j, 2) = img(i, j, 1);
-                    R(i, j, 3) = img(i, j, 1);
-                    G(i, j, 1) = img(i, j, 2);
-                    G(i, j, 2) = img(i, j, 2);
-                    G(i, j, 3) = img(i, j, 2);
-                    B(i, j, 1) = img(i, j, 3);
-                    B(i, j, 2) = img(i, j, 3);
-                    B(i, j, 3) = img(i, j, 3);
-                end
-            end
+function [ImgRed, ImgGreen, ImgBlue] = ExtraerColores(imgOriginal)
+    % 1. Calcular dimensiones manualmente
+    filas = 0;
+    columnas = 0;
+    for y = imgOriginal(1:end, 1, 1)'
+        filas = filas + 1;
+    end
+    for x = imgOriginal(1, 1:end, 1)
+        columnas = columnas + 1;
+    end
+
+    % 2. Preasignar matrices 3D en ceros con formato 'uint8'
+    ImgRed   = zeros(filas, columnas, 3, 'uint8');
+    ImgGreen = zeros(filas, columnas, 3, 'uint8');
+    ImgBlue  = zeros(filas, columnas, 3, 'uint8');
+    
+    % 3. Rellenar manualmente cada canal
+    for i = 1:filas
+        for j = 1:columnas
+            ImgRed(i, j, 1) = imgOriginal(i, j, 1);
+            ImgGreen(i, j, 2) = imgOriginal(i, j, 2);
+            ImgBlue(i, j, 3) = imgOriginal(i, j, 3);
         end
+    end
+end
