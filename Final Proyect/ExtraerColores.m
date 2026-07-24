@@ -18,7 +18,13 @@ function [ImgRed, ImgGreen, ImgBlue] = ExtraerColores(imgOriginal)
     for i = 1:filas
         for j = 1:columnas
             ImgRed(i, j, 1) = imgOriginal(i, j, 1);
+            ImgRed(i, j, 2) = imgOriginal(i, j, 1);
+            ImgRed(i, j, 3) = imgOriginal(i, j, 1);
+            ImgGreen(i, j, 1) = imgOriginal(i, j, 2);
             ImgGreen(i, j, 2) = imgOriginal(i, j, 2);
+            ImgGreen(i, j, 3) = imgOriginal(i, j, 2);
+            ImgBlue(i, j, 1) = imgOriginal(i, j, 3);
+            ImgBlue(i, j, 2) = imgOriginal(i, j, 3);
             ImgBlue(i, j, 3) = imgOriginal(i, j, 3);
         end
     end
