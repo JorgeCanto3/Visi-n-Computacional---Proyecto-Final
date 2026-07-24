@@ -1,5 +1,5 @@
 function [ImgRed, ImgGreen, ImgBlue] = ExtraerColores(imgOriginal)
-    % 1. Calcular dimensiones manualmente
+    % Calcular dimensiones manualmente
     filas = 0;
     columnas = 0;
     for y = imgOriginal(1:end, 1, 1)'
@@ -9,12 +9,12 @@ function [ImgRed, ImgGreen, ImgBlue] = ExtraerColores(imgOriginal)
         columnas = columnas + 1;
     end
 
-    % 2. Preasignar matrices 3D en ceros con formato 'uint8'
+    % Preasignar matrices 3D en ceros con formato 'uint8'
     ImgRed   = zeros(filas, columnas, 3, 'uint8');
     ImgGreen = zeros(filas, columnas, 3, 'uint8');
     ImgBlue  = zeros(filas, columnas, 3, 'uint8');
     
-    % 3. Rellenar manualmente cada canal
+    % Rellenar manualmente cada canal
     for i = 1:filas
         for j = 1:columnas
             ImgRed(i, j, 1) = imgOriginal(i, j, 1);

@@ -1,5 +1,4 @@
 function imgFiltrada = filtroMedianaManual(img, tamVentana)
-    % FILTROMEDIANAMANUAL Aplica filtro de mediana espacial de forma 100% manual.
     
     imgD = im2double(img);
     [filas, columnas, canales] = size(imgD);

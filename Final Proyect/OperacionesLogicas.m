@@ -1,7 +1,7 @@
 classdef OperacionesLogicas
     methods (Static)
 
-        % 1. AND entre dos imagenes (Interseccion)
+        % AND entre dos imagenes (Interseccion)
         function Q = andImagenes(P1, P2, filas, columnas, canales)
             disp('Aplicando: Operacion Logica AND (Imagenes)...');
             Q = zeros(filas, columnas, canales, 'logical');
@@ -20,7 +20,7 @@ classdef OperacionesLogicas
             end
         end
 
-        % 2. AND con un valor escalar constante
+        % AND con un valor escalar constante
         function Q = andEscalar(P1, C, filas, columnas, canales)
             disp('Aplicando: Operacion Logica AND (Escalar)...');
             Q = zeros(filas, columnas, canales, 'logical');
@@ -38,7 +38,7 @@ classdef OperacionesLogicas
             end
         end
 
-        % 3. OR entre dos imagenes (Union)
+        % OR entre dos imagenes (Union)
         function Q = orImagenes(P1, P2, filas, columnas, canales)
             disp('Aplicando: Operacion Logica OR (Imagenes)...');
             Q = zeros(filas, columnas, canales, 'logical');
@@ -57,7 +57,7 @@ classdef OperacionesLogicas
             end
         end
 
-        % 4. OR con un valor escalar constante
+        % OR con un valor escalar constante
         function Q = orEscalar(P1, C, filas, columnas, canales)
             disp('Aplicando: Operacion Logica OR (Escalar)...');
             Q = zeros(filas, columnas, canales, 'logical');
@@ -75,7 +75,7 @@ classdef OperacionesLogicas
             end
         end
 
-        % 5. NOT de una imagen (Negativo / Inversion de polaridad)
+        % NOT de una imagen (Negativo / Inversion de polaridad)
         function Q = notImagen(P1, filas, columnas, canales)
             disp('Aplicando: Operacion Logica NOT (Negativo Fotografico)...');
             Q = zeros(filas, columnas, canales, 'uint8');

@@ -1,4 +1,3 @@
-% distanciaEuclidiana.m
 function d = distanciaEuclidiana(puntoA, puntoB)
     x = puntoA(1, 1);
     y = puntoA(1, 2);

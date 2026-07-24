@@ -1,4 +1,3 @@
-% DIstancia Manhattan
 function dist = manhattan(p,q)
 x = (p(1) - q(1));
 

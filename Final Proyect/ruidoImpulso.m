@@ -1,5 +1,4 @@
 function imgRuido = ruidoImpulso(img, probabilidad)
-% RUIDOIMPULSO Agrega ruido de impulso unipolar de forma manual.
 
 imgRuido = im2double(img);
 [filas, columnas, canales] = size(imgRuido);

@@ -1,5 +1,4 @@
 function imgFiltrada = filtroGaussianoManual(img)
-% FILTROGAUSSIANOMANUAL Aplica filtro gaussiano 3x3 de forma manual.
 
 imgD = im2double(img);
 [filas, columnas, canales] = size(imgD);

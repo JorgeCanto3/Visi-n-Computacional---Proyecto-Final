@@ -1,7 +1,4 @@
 function imgFiltrada = filtroBilateralManual(img, sigma_d, sigma_r)
-% FILTROBILATERALMANUAL Aplica filtro bilateral simplificado de forma manual.
-% sigma_d: Desviación estándar espacial
-% sigma_r: Desviación estándar de intensidad/rango
 
 imgD = im2double(img);
 [filas, columnas, canales] = size(imgD);

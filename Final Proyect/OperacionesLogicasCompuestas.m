@@ -1,7 +1,7 @@
 classdef OperacionesLogicasCompuestas
     methods (Static)
         
-        % 1. NAND entre dos imagenes (Negacion de AND)
+        % NAND entre dos imagenes (Negacion de AND)
         function Q = nandImagenes(P1, P2, filas, columnas, canales)
             disp('Aplicando: Operacion Logica NAND...');
             Q = zeros(filas, columnas, canales, 'logical');
@@ -21,7 +21,7 @@ classdef OperacionesLogicasCompuestas
             end
         end
         
-        % 2. NOR entre dos imagenes (Negacion de OR)
+        % NOR entre dos imagenes (Negacion de OR)
         function Q = norImagenes(P1, P2, filas, columnas, canales)
             disp('Aplicando: Operacion Logica NOR...');
             Q = zeros(filas, columnas, canales, 'logical');
@@ -41,7 +41,7 @@ classdef OperacionesLogicasCompuestas
             end
         end
         
-        % 3. XOR entre dos imagenes (OR Exclusivo)
+        % XOR entre dos imagenes (OR Exclusivo)
         function Q = xorImagenes(P1, P2, filas, columnas, canales)
             disp('Aplicando: Operacion Logica XOR (Exclusiva)...');
             Q = zeros(filas, columnas, canales, 'logical');
@@ -60,7 +60,7 @@ classdef OperacionesLogicasCompuestas
             end
         end
         
-        % 4. XNOR entre dos imagenes (Equivalencia / Negacion de XOR)
+        % XNOR entre dos imagenes (Equivalencia / Negacion de XOR)
         function Q = xnorImagenes(P1, P2, filas, columnas, canales)
             disp('Aplicando: Operacion Logica XNOR...');
             Q = zeros(filas, columnas, canales, 'logical');

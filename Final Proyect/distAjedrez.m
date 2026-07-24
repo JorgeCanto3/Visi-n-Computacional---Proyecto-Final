@@ -1,4 +1,3 @@
-% Distancia Ajendrez
 function dist = distAjedrez(p, q)
     x = p(1) - q(1);
     if x < 0

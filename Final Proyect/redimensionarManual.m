@@ -1,5 +1,4 @@
 function imgRedimensionada = redimensionarManual(imgOriginal, altoDeseado, anchoDeseado)
-% Redimensionamiento 100% manual por interpolación del Vecino Más Cercano
 [altoOrig, anchoOrig, canales] = size(imgOriginal);
 imgRedimensionada = zeros(altoDeseado, anchoDeseado, canales, 'uint8');
 

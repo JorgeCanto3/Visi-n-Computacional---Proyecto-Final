@@ -1,7 +1,4 @@
 function imgRuido = ruidoSalPimienta(img, densidad)
-% RUIDOSALPIMIENTA Agrega ruido de sal y pimienta de forma manual.
-% img: Imagen de entrada (grises o color)
-% densidad: Porcentaje de píxeles afectados (ej. 0.05 para 5%)
 
 imgRuido = im2double(img);
 [filas, columnas, canales] = size(imgRuido);

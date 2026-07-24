@@ -1,6 +1,4 @@
 function [outputArg1,outputArg2] = main(inputArg1,inputArg2)
-%MAIN Summary of this function goes here
-%   Detailed explanation goes here
 arguments (Input)
     inputArg1
     inputArg2

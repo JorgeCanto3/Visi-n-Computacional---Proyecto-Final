@@ -1,6 +1,4 @@
 function imgBinaria = binarizarManual(imgGris, umbral)
-% BINARIZARMANUAL Convierte una imagen en escala de grises a blanco y negro 
-% utilizando un umbral proporcionado por el usuario de forma manual.
 
 [filas, columnas] = size(imgGris);
 imgBinaria = false(filas, columnas);

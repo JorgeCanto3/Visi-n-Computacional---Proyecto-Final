@@ -1,7 +1,4 @@
 function imgRuido = ruidoGaussiano(img, media, varianza)
-% RUIDOGAUSSIANO Agrega ruido gaussiano de forma manual.
-% media: Media del ruido (ej. 0)
-% varianza: Varianza del ruido (ej. 0.01)
 
 imgD = im2double(img);
 ruido = media + sqrt(varianza) * randn(size(imgD));

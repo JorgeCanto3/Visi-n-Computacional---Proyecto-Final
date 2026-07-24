@@ -1,7 +1,7 @@
 classdef OperacionesGeometricas
     methods (Static)
 
-        % 1. Traslación
+        % Traslación
         function Q = trasladar(P1, deltaX, deltaY, filas, columnas, canales)
             disp('Aplicando: Traslacion Manual...');
             Q = zeros(filas, columnas, canales, 'uint8');
@@ -21,7 +21,7 @@ classdef OperacionesGeometricas
             end
         end
 
-        % 2. Escalamiento (Interpolación del Vecino Más Cercano)
+        % Escalamiento (Interpolación del Vecino Más Cercano)
         function Q = escalar(P1, factor, filas, columnas, canales)
             disp('Aplicando: Escalamiento Manual...');
             nuevas_filas = round(filas * factor);
@@ -47,7 +47,7 @@ classdef OperacionesGeometricas
             end
         end
 
-        % 3. Rotación (Mapeo inverso para evitar huecos negros)
+        % Rotación 
         function Q = rotar(P1, grados, filas, columnas, canales)
             disp('Aplicando: Rotacion Manual...');
             Q = zeros(filas, columnas, canales, 'uint8');

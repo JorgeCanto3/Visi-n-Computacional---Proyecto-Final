@@ -1,6 +1,4 @@
 function imgRuido = ruidoUniforme(img, a, b)
-% RUIDOUNIFORME Agrega ruido uniforme aditivo de forma manual.
-% a, b: Límites inferior y superior del ruido
 
 imgD = im2double(img);
 ruido = a + (b - a) * rand(size(imgD));
